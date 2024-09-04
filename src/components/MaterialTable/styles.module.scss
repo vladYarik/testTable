@@ -1,0 +1,105 @@
+.table{
+    width: 100%;
+    
+    height: 640px;
+   
+    border-radius: 10px;
+    
+    position: relative;
+}
+.tableHeader{
+    background-color: #827cde;
+}
+
+.tableHeaderCell{
+    color: rgb(235, 231, 231);
+    font-weight: bold;
+}
+.tableBodyRow{
+    width: 100%;
+    height: 50px;
+    user-select: none;
+}
+.tableBodyRow:hover{
+    transition: all 0.1s ease;
+    background-color: rgba(0,0,0,0.03);
+}
+.tableBodyRowEmpty{
+    height: 50px;
+}
+
+// pagination
+
+.pagination_container{
+   
+    width: 100%;
+    min-width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: -4px;
+    padding-bottom: 4px;
+    gap: 5px;
+    user-select: none;
+}
+.pagination_button{
+    height: 35px;
+    cursor: pointer;
+    width: 35px;
+    border-radius: 5px;
+    background-color: #827cde;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+.pagination_list{
+    display: flex;
+    gap: 5px;
+    align-items:start;
+    justify-content: center;
+}
+.pagination_elem{
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+}
+.pagination_elem:hover{
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(0,0,0,0.07);
+}
+.pagination_elem__active{
+    background-color: #827cde;
+    color: white;
+}
+.pagination_elem__active:hover{
+    background-color: #827cde;  
+}
+@media screen and (max-width:720px) {
+    .pagination_container{
+        gap:3px;
+    }
+    .pagination_list{
+        display: flex;
+        gap: 3px;
+        align-items:start;
+        justify-content: center;
+    }
+    .pagination_elem{
+        cursor: pointer;
+        height: 30px;
+        width: 30px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.8rem;
+    }
+}
