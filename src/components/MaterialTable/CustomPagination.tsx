@@ -29,7 +29,7 @@ function CustomPagination({count,page,onPageChange}:ICustomPagination) {
             onClick={() => {
                 page > 0 ? onPageChange(page-1) : null
             }}
-            style={{fontSize:40,color:'#827cde'}}
+            style={{fontSize:40,color:page > 0 ? '#827cde' : '#dfdfe0'}}
          />
        
 
@@ -60,7 +60,7 @@ function CustomPagination({count,page,onPageChange}:ICustomPagination) {
           onClick={() => {
             count > page+1 ? onPageChange(page+1) : null
         }}
-            style={{fontSize:40,color:'#827cde'}}
+            style={{fontSize:40,color:page+1 === count ? '#dfdfe0' : '#827cde'}}
          />
     </div>
   )

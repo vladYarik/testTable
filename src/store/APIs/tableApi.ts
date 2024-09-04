@@ -1,4 +1,4 @@
-import { IGetUsersReq, IGetUsersRes, IUser } from "../types";
+import { IGetUsersReq, IGetUsersRes } from "../types";
 import { mainApi } from "./mainApi";
 
 

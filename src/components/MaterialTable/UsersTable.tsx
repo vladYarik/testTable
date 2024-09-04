@@ -1,4 +1,4 @@
-import { CircularProgress, Paper, Table, TableBody, TableCell, TableContainer, TableFooter, TableHead, TablePagination, TableRow } from "@mui/material"
+import {Paper, Table, TableBody, TableCell, TableContainer, TableFooter, TableHead, TableRow } from "@mui/material"
 import { IUser } from "../../store/types"
 import styles from './styles.module.scss'
 import LoadingBanner from "../UI/LoadingBanner/LoadingBanner"
@@ -38,7 +38,7 @@ function MaterialTable({data,onChangePage,page,maxPages,isLoading,isError}:IMate
       </Paper>
     )
   }
-  console.log(data)
+  
   return (
     <TableContainer className={styles.table} component={Paper}>
         <Table sx={{height:'100%'}}>
