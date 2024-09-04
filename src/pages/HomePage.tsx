@@ -13,7 +13,7 @@ export default function HomePage() {
   const [searchParams, setSearchParams] = useSearchParams();
   const page = searchParams.get('page') || '0';
   const limit = useAppSelector(selectUsersTableLimit)
-  const {data,isError,isLoading} = useGetUsersQuery({limit:limit,skip:+page * limit},{refetchOnMountOrArgChange:true})
+  const {data,isError,isLoading} = useGetUsersQuery({limit:limit,skip:+page * limit})
   
 
   const handleChangePage = (page:number) => {
